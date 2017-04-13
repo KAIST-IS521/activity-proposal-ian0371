@@ -12,44 +12,43 @@
 \begin{document}
 %%% Header starts
 \noindent{\large\textbf{IS-521 Activity Proposal}\hfill
-                \textbf{Your Name}} \\
-         {\phantom{} \hfill \textbf{GitHub ID}} \\
+                \textbf{ChiHyun Song}} \\
+         {\phantom{} \hfill \textbf{ian0371}} \\
          {\phantom{} \hfill Due Date: April 15, 2017} \\
 %%% Header ends
 
 \section{Activity Overview}
+최근 Slack, Trello 등 많은 개발 협업 툴이 개발자들에 의해서 사용되고 있다. 이런 툴을 잘 사용하면 협업이 한층 더 수월해질 것이다. Slack같은 경우에는 API를 제공하고 이를 통해 다양한 어플리케이션과의 연동이 가능하다. 예를 들면 Github app을 사용해 Github의 이벤트 알림을 Slack으로 받을 수 있다. 이번 Activity는 Slack을 사용해보고, 공개된 API와 app \cite{SlackAPI}을 활용하고 개발 및 팀원과의 협업 능률을 높이는 것이 목표이다. 이를 통해 학생들은 Slack을 사용해보고, Slack에서 제공하는 기본 app을 사용하고 Slack에서 공개하는 API를 활용해 Slackbot을 만드는 것이 목표이다.
 
-Briefly describe what this activity is about, and \emph{why} you are
-proposing this activity. (활동에 대한 간략한 설명과 왜 이 활동을
-제안하는지에 대한 이유를 서술.)
 
 \section{Exercises}
 
-Describe a series of exercises that students will carry out. (학생들이 하게
-될 연습문제를 순차적으로 서술.)
-
 \begin{exercise}
+Github 알림앱 연동
 
-  In this exercise, you do ...
+교수님을 포함한 많은 학생들이 Github repository를 watch해둔 상태에서 많은 이메일로 인해 고통받는다.
+따라서 수업 전용 Slack 채널을 만들고, 수업에서 사용하는 KAIST-IS521 Github repository에 issue나 pull request, commit 등 이벤트가 발생할 때마다 알려주는 Slack app \cite{GithubApp}과 연동한다. 
 
 \end{exercise}
 
 \begin{exercise}
+대화로그 저장봇
 
-  In this exercise, you do ...
+Slack 무료 버전을 사용하면 일정 대화 로그가 쌓인 뒤에는 오래된 메시지는 사라진다. 따라서 중요한 메시지가 사라지는 경우가 발생한다. 이를 방지하기 위해 일정 기간이 지나거나 메시지가 일정 용량이 쌓일 경우에 이를 백업하는 Slackbot을 제작한다.
 
 \end{exercise}
 
 \begin{exercise}
+Web Crawler
 
-  In this exercise, you do ...
+많은 수업들이 KLMS를 사용하는 대신 교수님들만의 홈페이지에 공지사항이 올라온다. 정보보호론도 \cite{IS511}에 News가 올라오고,  정보보호 실습 수업도 \cite{IS512}에 강의 자료가 게시된다. 이 홈페이지들을 일정 주기마다 크롤링해서 공지가 올라오는 등 홈페이지의 내용이 바뀔 때마다 Slackbot이 알려주는 메시지를 보낸다.
 
 \end{exercise}
 
 \section{Expected Solutions}
 
-Put expected solutions here.
-(예상되는 답안에 대해서 서술.)
+학생들은 위에 제시된 Activity들에 대한 애플리케이션 및 Slackbot을 활용, 제작해야 한다. 결과물은 app 연동의 경우 \TeX 형태의 보고서, Slackbot 제작의 경우 각 Activity에 대한 파이썬 코드이다.
+
 
 \bibliography{references}
 \bibliographystyle{plainnat}
